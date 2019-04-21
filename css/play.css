@@ -1,0 +1,160 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    line-height: 1.42857;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    color: #919191;
+}
+
+input,
+select {
+    /*height: 41px;*/
+    border: 2px solid #DDD !important;
+    border-radius: 3px !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.content {
+    height: 645px;
+    margin: 0px auto;
+    width: 500px;
+    padding: 20px 0;
+    /* cursor: none; */
+}
+
+#myCanvas {
+    /*width: 100%;*/
+    /*height: 100%;*/
+	margin:  auto;
+    border: 1px solid #DDD;
+	background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url('../img/background.png')
+    
+}
+
+.content .piano {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #DDD;
+    margin-top: -7px;
+}
+
+#blog {
+	width:500px;
+	height:100%;
+	background:#c3c3c3;
+	position:absolute;
+	z-index:555;
+	opacity: 0.5;
+	bottom: 0;
+	top:-12px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display:none;
+}
+.gameOverMessage {
+	width:500px;
+	height:400px;
+	/*background:url('../img/piano-keys-1090984_960_720.jpg');*/
+	margin:auto;
+	position:absolute;
+	top:25%;
+	bottom:25%;
+	left:25%;
+	right:25%;
+	/*margin: 0px 0 0 30%;*/
+	z-index:5555;
+	border-radius: 27%;
+	display:none;
+}
+.gameOverMessage h3 {
+	font-family:georgia;
+	font-size:28px;
+	text-transform:capitalize;
+	letter-spacing:3px;
+	color:#fff;
+	text-align:center;
+	line-height:100px;
+	animation:animmess 5s infinite alternate;
+}
+.play_again {
+	width: 170px;
+	height: 40px;
+	background:#504444;
+	font-family:georgia;
+	font-weight:bold;
+	color:#fff;
+	font-size:17px;
+	text-transform:capitalize;
+	/*animation:animmess 5s infinite alternate;*/
+	/*margin: 78px 0 0 60px;*/
+	margin: 25px 37px;
+	border-radius: 20px
+}
+.scores {
+	width:100%;
+	height:100px;
+	background:#8d83e7;
+	opacity:0.9;
+}
+.sc,.hsc {
+	display:block;
+	text-align:center;
+	font-family:tahoma;
+	font-weight:bold;
+	color:#fff;
+	font-size:17px;
+	text-transform:capitalize;
+	line-height:40px;
+}
+.sp {
+	font-family:georgia;
+	color:#f00;
+}
+@keyFrames animmess {
+		from {
+				transform:scale(1)
+		}
+		to{
+				transform:scale(0.7)
+		}
+}	
+  
+.charact{
+	width: 400px;
+	height: 400px;
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.charact img{
+	width: 200px;
+	height: 200px;
+	background-color: transparent;	
+}
+.charact h1{
+	color: gold;
+	
+
+}
